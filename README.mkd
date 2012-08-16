@@ -1,0 +1,11 @@
+# iso-tools README
+
+## INTRODUCTION
+
+There are scripts for custom linux iso image preparation and creation.
+
+## HOW IT WORKS
+
+There scripts are consist from:
+
+  * create-iso.sh - script for iso image creating
