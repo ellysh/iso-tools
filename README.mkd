@@ -15,3 +15,7 @@ There scripts are consist from:
   * indexing-deb.sh - script for indexing deb packages
 
   * md5sum-calc.sh - script for md5 sum calculation
+
+  * auto directory - scripts with automation iso image assembling
+
+  * src directory - scripts with common code
