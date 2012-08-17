@@ -4,9 +4,9 @@
 
 . src/functions.sh
 
-print_help "Usage: md5sum-calc.sh <iso-files-path>" "$1"
+print_help "Usage: md5sum-calc.sh <source-path>" "$1"
 
-ISO_FILES_PATH="$1"
+SOURCE_PATH="$1"
 MD5SUM_FILE="md5sum.txt"
 SKIP_FILES="$MD5SUM_FILE \
             isolinux.bin"
@@ -23,4 +23,4 @@ get_skip_files()
   echo ${RETURN:0:${#RETURN}-3}
 }
 
-find "$ISO_FILES_PATH" -type f -not \( $(get_skip_files) \) -print0 | xargs -0 md5sum > "$ISO_FILES_PATH"/"$MD5SUM_FILE"
+find "$SOURCE_PATH" -type f -not \( $(get_skip_files) \) -print0 | xargs -0 md5sum > "$SOURCE_PATH"/"$MD5SUM_FILE"

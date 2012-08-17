@@ -13,3 +13,5 @@ There scripts are consist from:
   * deb-to-seed.sh - script for deb packages list adding to the seed file
 
   * indexing-deb.sh - script for indexing deb packages
+
+  * md5sum-calc.sh - script for md5 sum calculation

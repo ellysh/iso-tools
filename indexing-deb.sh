@@ -4,7 +4,7 @@
 
 . src/functions.sh
 
-print_help "Usage: indexing-deb.sh <deb-packages-path>" "$1"
+print_help "Usage: indexing-deb.sh <deb-files-path>" "$1"
 
 DEB_PATH="$1"
 
