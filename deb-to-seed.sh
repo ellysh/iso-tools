@@ -5,9 +5,7 @@
 
 SEED_FILE="$1"
 DEB_PATH="$2"
-
-# Add install packages to preseed file
-local FILES=$(ls $DEB_PATH | grep "\.deb$")
+FILES=$(ls $DEB_PATH | grep "\.deb$")
 
 echo "d-i pkgsel/include string \\" >> "$SEED_FILE"
 

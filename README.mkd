@@ -9,3 +9,5 @@ There are scripts for custom linux iso image preparation and creation.
 There scripts are consist from:
 
   * create-iso.sh - script for iso image creating
+
+  * deb-to-seed.sh - script for deb packages list adding to the seed file
