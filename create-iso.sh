@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Script for iso image creating
-# Usage: create-iso.sh <iso-filename> <source-files-path>
+
+. src/functions.sh
+
+print_help "Usage: create-iso.sh <iso-filename> <source-files-path>" "$1"
 
 ISO_NAME="$1"
 SOURCE_PATH="$2"

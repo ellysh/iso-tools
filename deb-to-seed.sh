@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Script for deb packages list adding to the seed file
-# Usage: deb-to-seed.sh <seed-file> <deb-files-path>
+
+. src/functions.sh
+
+print_help "Usage: deb-to-seed.sh <seed-file> <deb-files-path>" "$1"
 
 SEED_FILE="$1"
 DEB_PATH="$2"
