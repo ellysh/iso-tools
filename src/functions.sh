@@ -25,7 +25,7 @@ print_help()
     HELP_MESSAGE="$1"
     SCRIPT_ARGUMENT="$2"
 
-    if [ "$SCRIPT_ARGUMENT" == "" ]
+    if [ "$SCRIPT_ARGUMENT" == "" ] || [ "$SCRIPT_ARGUMENT" == "-h" ]
     then
         echo "$HELP_MESSAGE"
         exit 1
