@@ -4,10 +4,11 @@
 
 . ../src/functions.sh
 
-SOURCE_PATH="/home/elly/Projects/uso-iso-set3"
+HOME_PATH="/home/ilya"
+SOURCE_PATH="$HOME_PATH/Projects/uso-iso-set3"
 SEED_FILE="$SOURCE_PATH/preseed/uso2.seed"
 DEB_PATH="$SOURCE_PATH/spetstekhnika/binary/"
-ISO_FILE="/home/elly/Projects/ubuntu.iso"
+ISO_FILE="$HOME_PATH/Projects/ubuntu.iso"
 
 cd_safe ".."
 
