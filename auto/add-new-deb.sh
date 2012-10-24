@@ -5,14 +5,14 @@
 . ../src/functions.sh
 
 HOME_PATH="/home/ilya"
-SOURCE_PATH="$HOME_PATH/Projects/uso-iso-set3"
+SOURCE_PATH="$HOME_PATH/Projects/uso-iso-source/iso"
 SEED_FILE="$SOURCE_PATH/preseed/uso2.seed"
 DEB_PATH="$SOURCE_PATH/spetstekhnika/binary/"
 ISO_FILE="$HOME_PATH/Projects/ubuntu.iso"
 
 cd_safe ".."
 
-./deb-to-seed.sh "$SEED_FILE" "$DEB_PATH"
+#./deb-to-seed.sh "$SEED_FILE" "$DEB_PATH"
 
 ./indexing-deb.sh "$DEB_PATH"
 
