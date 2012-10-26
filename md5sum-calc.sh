@@ -23,4 +23,8 @@ get_skip_files()
   echo ${RETURN:0:${#RETURN}-3}
 }
 
-find "$SOURCE_PATH" -type f -not \( $(get_skip_files) \) -print0 | xargs -0 md5sum > "$SOURCE_PATH"/"$MD5SUM_FILE"
+cd_safe "$SOURCE_PATH"
+
+find . -type f -not \( $(get_skip_files) \) -print0 | xargs -0 md5sum > "$SOURCE_PATH"/"$MD5SUM_FILE"
+
+restore_directory
