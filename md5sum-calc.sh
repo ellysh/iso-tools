@@ -9,7 +9,8 @@ print_help "Usage: md5sum-calc.sh <source-path>" "$1"
 SOURCE_PATH="$1"
 MD5SUM_FILE="md5sum.txt"
 SKIP_FILES="$MD5SUM_FILE \
-            isolinux.bin"
+            isolinux.bin
+            boot.cat"
 
 get_skip_files()
 {
