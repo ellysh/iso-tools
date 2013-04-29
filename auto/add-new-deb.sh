@@ -5,7 +5,7 @@
 . ../src/functions.sh
 
 HOME_PATH="/home/elly"
-SOURCE_PATH="$HOME_PATH/Projects/uso-iso-source-3"
+SOURCE_PATH="$HOME_PATH/Projects/uso-iso-source/iso"
 SEED_FILE="$SOURCE_PATH/preseed/uso2.seed"
 DEB_PATH="$SOURCE_PATH/spetstekhnika/binary/"
 ISO_FILE="$HOME_PATH/Projects/ubuntu.iso"
